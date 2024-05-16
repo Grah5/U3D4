@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tombola</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  #numeroEstratto {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>Tombola</h1>
+<button onclick="estraiNumero()">Estrai numero</button>
+<p id="numeroEstratto"></p>
+
+<script>
+function estraiNumero() {
+  // Genera un numero casuale tra 1 e 75
+  var numeroCasuale = Math.floor(Math.random() * 75) + 1;
+  
+  // Mostra il numero estratto nella pagina HTML
+  document.getElementById("numeroEstratto").textContent = "Numero estratto: " + numeroCasuale;
+}
+</script>
+</body>
+</html>
